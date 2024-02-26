@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #2f363e;
+}
+
+.App {
+  position: absolute;
+  width: 40%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #2f363e;
+  padding: 30px 50px;
+  border-radius: 30px;
+  box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+    10px 10px 70px rgba(0, 0, 0, 0.25), inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+}
+.App h2 {
+  width: 100%;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.App h2 span{
+  color: #ff2c74;
+}
+.App input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+    inset 2px 2px 5px rgba(0, 0, 0, 0.5), inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+}
+.App ul {
+  list-style: "❤️";
+}
+.task_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.App ul li {
+  cursor: pointer;
+  width: 95%;
+  background: #1f83f2;
+  color: #fff;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  padding: 10px;
+  word-wrap: break-word;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+    inset 2px 2px 5px rgba(0, 0, 0, 0.5), inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+}
+.diffStyle {
+  list-style: "✅";
+  background: #f00 !important;
+}
+.App .task_list span {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #ff2c74;
+  color: #fff;
+  margin-bottom: 15px;
+  cursor: pointer;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+    inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+}
+.App .btn {
+  display: block;
+  margin: auto;
+  padding: 10px 50px;
+  border: 1px solid #2f363e;
+  outline: 0;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 17px;
+  color: #0c6ddb;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+    inset 2px 2px 5px rgba(0, 0, 0, 0.5), inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+}
+.App .btn:hover{
+  background: transparent;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .App{
+    width: 90%;
+  }
+  .App h2 {
+    font-size: 25px;
+  }
+  .App input::placeholder {
+    font-size: 14px;
+  }
+  .App .btn{
+    padding: 10px 30px;
+  }
+}
