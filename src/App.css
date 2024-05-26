@@ -69,6 +69,18 @@ body {
   list-style: "✅";
   background: #f00 !important;
 }
+.edit-btn, .save-btn {
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.save-btn {
+  background-color: #0e509a;
+  color: #fff;
+}
 .App .task_list span {
   width: 30px;
   height: 30px;
